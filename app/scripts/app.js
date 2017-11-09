@@ -7,6 +7,8 @@
                   requireBase: false
                });
 
+          $urlRouterProvider.otherwise('/home');
+
           $stateProvider
               .state('home', {
                   url: '/',
@@ -14,7 +16,7 @@
                   templateUrl: '/templates/home.html'
               });
       }
-      
+
      angular
-         .module('projectName', ['ui.router', 'firebase'])
+         .module('blocChat', ['ui.router', 'firebase'])
  })();
