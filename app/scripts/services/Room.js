@@ -7,6 +7,11 @@
 
     Room.all = rooms;
 
+    Room.add = function(room) {
+      //console.log("addRoom")
+       rooms.$add(room);
+   } 
+
     return Room;
   }
 
