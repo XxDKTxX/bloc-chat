@@ -1,5 +1,5 @@
-<h1>Home Page</h1>
+<h1>Bloc Chat!</h1>
 
-<div>
-<span></span>
+<div ng-repeat="room in home.rooms track by $index">
+  <p> {{ room.$value }} </p>
 </div>

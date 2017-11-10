@@ -7,8 +7,6 @@
                   requireBase: false
                });
 
-          $urlRouterProvider.otherwise('/home');
-
           $stateProvider
               .state('home', {
                   url: '/',
@@ -19,4 +17,5 @@
 
      angular
          .module('blocChat', ['ui.router', 'firebase'])
+         .config(config)
  })();
