@@ -8,9 +8,12 @@
     Room.all = rooms;
 
     Room.add = function(room) {
-      //console.log("addRoom")
        rooms.$add(room);
-   } 
+   }
+
+   Room.delete = function(room) {
+     rooms.$remove(room)
+   }
 
     return Room;
   }
