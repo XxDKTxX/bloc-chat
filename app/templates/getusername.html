@@ -1,0 +1,6 @@
+<form>
+  <h3>Create a username</h3>
+  <h5 class="text-prompt">This name will appear when you send messages:</h5>
+  <input type="text" name="input" ng-model="cookie.username"  placeholder="Enter username" >
+  <button type="button" class="username-submit" ng-disabled="cookie.username == null" ng-click="cookie.setUserName()">Chat!</button>
+</form>
