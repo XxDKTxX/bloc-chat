@@ -11,11 +11,16 @@
 
 <h1 class="current-room">{{ home.currentRoom.$value }}</h1>
 
-<div class="messages-content" ng-repeat="message in home.messages">
+<div class="messages-content" ng-repeat="message in home.messages" ng-hide='home.currentRoom == null'>
   <div class="content">content:  {{ message.content }}</div>
   <div class="username">username: {{ message.username }}</div>
   <div class="sentAt">sent at: {{ message.sentAt }}</div>
   <div class="roomId">Room ID: {{ message.roomId }}</div>
+  </div>
+
+  <div class='new-message' ng-hide='home.currentRoom == null'>
+<div class='text-bar'><input type='text'> <button type='submit'>Send</button></div>
+
   </div>
 
 </div>
