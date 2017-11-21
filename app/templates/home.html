@@ -16,10 +16,10 @@
   <div class="username">username: {{ message.username }}</div>
   <div class="sentAt">sent at: {{ message.sentAt }}</div>
   <div class="roomId">Room ID: {{ message.roomId }}</div>
-  <button class='deleteMessage' type='button' ng-click=''>Delete</button>
+  <div><button class='deleteMessage' type='button' ng-click=''>Delete</button><div>
   </div>
 
-  <div class='new-message' ng-hide='home.currentRoom == null'>
+  <div class='new-message'>
     <input type="text" class="text-bar" id="textfield" placeholder=" Type message here..." ng-model="home.newMessage.content">
     <button class="send-message-button" ng-click="home.sendMessage()">Send Message!</button>
 
